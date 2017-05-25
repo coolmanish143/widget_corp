@@ -20,26 +20,24 @@
 		 
 		 <?php
 		 //often these are form values in $_POST
-		 $menu_name="Today's Widget Trivia";
-		 $position=(int)4;
-		 $visible=(int)1;
-		 
-		 //Escape all strings
-     $menu_name=mysqli_real_escape_string($connection,$menu_name);
+		 $id= 5;
+		 $menu_name="DELETE ME";
+		 $position=4;
+		 $visible=1;
 		 
 		 
 		  //2. performing database query
  	 
-		$query = " insert into subjects(";
-		$query .=" menu_name,position,visible";
-		$query .= ") values (";
-		$query .= "  '{$menu_name}',{$position},{$visible}";
-		$query .=")";
+		$query = " update subjects SET ";
+		$query .=" menu_name = '{$menu_name}' , ";
+		$query .=" position ={$position}, ";
+		$query .= " visible ={$visible} ";
+		$query .= "where id= {$id}";
 		
 		
 		$result= mysqli_query($connection,$query);
 	
-		  if($result)
+		  if($result && mysqli_affected_rows($connection)==1)
 		  {  //success
 			//redirect_to("basic.html");
 			echo "success!";
@@ -47,7 +45,7 @@
 		  else
 		  {
 			  //failure
-			  //$message="subject creation failed"
+			  //$message="subject update failed"
 			die("Database query failed. " . mysqli_error($connection));
 		  }
 		   ?>
