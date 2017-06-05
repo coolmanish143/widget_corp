@@ -1,5 +1,6 @@
-<?php include("../includes/layout/header.php"); ?>
-<?php require_once("../includes/functions.php"); ?>
+<?php require_once("../includes/db_connection.php"); ?>
+<?php $layout_context="admin"; ?>
+     <?php require_once("../includes/functions.php"); ?>
 	  <div id="main">
 	  <div id="navigation">
 	    &nbsp;

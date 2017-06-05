@@ -11,6 +11,8 @@ body { width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px;
 	font-family: Verdana, Arial, Helvetica, sans-serif; background: #D4E6F4;
 	font-size: 13px; line-height: 15px; }
 img { border: none; }
+	a{color:#8D0D19;}
+	a:hover { color: #1A446C ;}
 table, tr, td { border-collapse: collapse; vertical-align: top; font-size: 13px; line-height: 15px;}
 a { color: #8D0D19;}
 
@@ -23,15 +25,38 @@ a { color: #8D0D19;}
 	background: #1A446C;  color: #D4E6F4; }
 
 /* Navigation */
-#navigation { width: 150px; padding: 1em 2em; color: #D4E6F4; background: #8D0D19; }
+#navigation {float:left; width: 150px; padding: 0em 2em; color: #D4E6F4; background: #8D0D19; }
 #navigation a { color: #D4E6F4; text-decoration: none; }
-ul.subjects { padding-left: 0; list-style: none; }
-ul.pages { padding-left: 2em; list-style: square; }
+ul.subjects {margin: 1em 0; padding-left: 0; list-style: none; }
+ul.pages { padding-left: 2em; list-style: square; font-weight:normal; }
 .selected { font-weight: bold; }
 
 /* Page Content */
-#page { padding-left: 2em; vertical-align: top; background: #EEE4B9; }
+#page { float :left; height: 100% ;padding-left: 2em; vertical-align: top; background: #EEE4B9; }
 #page h2 { color: #8D0D19; margin-top: 1em;}
 #page h3 { color: #8D0D19; }
+.view-content{
+	border:1px solid #999;
+	margin: 1em 0;
+	padding: 1em;
+}
+	
 
+div.message{
+	border.2px solid #8D0D19;
+	color: #8D0D19;
+	font-weight: bold;
+	margin: 1em 0;
+	padding: 1em;
+}
+/* errors */
+.error 
+{
+	border:2px solid #8D0D19;
+	color: #8D0D19;
+	font-weight: bold;
+	margin: 1em 0;
+	padding: 1em;
+}error ul { padding-left: 2em;}
+.
 
